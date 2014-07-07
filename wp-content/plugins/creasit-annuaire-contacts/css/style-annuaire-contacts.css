@@ -1,0 +1,19 @@
+/* Annuaire de contacts */
+.annuaire-contacts { width: 100%;	 }
+.annuaire-contacts li { width: 289px; float: left; margin: 0 5px 15px 5px; border: 2px solid #3b3b3b;  }
+.annuaire-contacts li > div { padding: 10px;  border-bottom: 1px solid #3b3b3b;  }
+.annuaire-contacts li div:first-child { background-color: #3b3b3b; color: #FFFFFF; font-weight: bold; font-size: 14px; text-transform: uppercase; overflow: hidden; }
+.annuaire-contacts li div:first-child > p { float: left; margin-right: 5px; max-width: 200px; }
+.annuaire-contacts li div:first-child > img { float: right; }
+.annuaire-contacts .item-even { background-color: #EEEEEE; }
+.annuaire-contacts .item-odd { background-color: #FFFFFF; }
+.annuaire-contacts li .type span, .annuaire-contacts li .categorie span {font-weight: bold;text-decoration: underline; } 
+.annuaire-contacts li .fiche { background-color: #3b3b3b; text-align: center; }
+.annuaire-contacts li .fiche a { color: #FFFFFF; font-weight: bold; font-size: 14px; text-transform: uppercase; text-decoration: none; }
+.annuaire-contacts li .fiche a:hover { text-decoration: underline; }
+
+.form-annuaire { background-color: #3b3b3b; padding: 5px 15px; position: relative; margin: 0 5px 15px 5px; }
+.form-annuaire form > p { float: left; margin-right: 20px; }
+.form-annuaire form { overflow: hidden; }
+.form-annuaire form label { color: #FFFFFF; font-weight: bold; display: block; }
+.form-annuaire form input[type="submit"] { background-color: #3aaf9d; text-transform: uppercase; color: #FFFFFF; display: block; border: none; cursor: pointer; padding: 10px; font-weight: bold; position: absolute; top: 0px; right: -2px; height: 100%; }

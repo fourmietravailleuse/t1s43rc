@@ -1,0 +1,29 @@
+.polaroid-main { width: 100%; padding: 20px; box-sizing: border-box;  position: relative; }
+
+.polaroid-main a { display: block; }
+
+.pic, .pic a{
+    /* Each picture and the hyperlink inside it */
+    width:180px;
+    height:180px;
+    overflow:hidden;
+}
+
+.pic{
+    /* Styles specific to the pic class */
+    position:absolute;
+    border:5px solid #EEEEEE;
+    border-bottom:18px solid #eeeeee;
+
+    /* CSS3 Box Shadow */
+    -moz-box-shadow:2px 2px 3px #333333;
+    -webkit-box-shadow:2px 2px 3px #333333;
+    box-shadow:2px 2px 3px #333333;
+}
+
+.pic a{
+    /* Specific styles for the hyperlinks */
+    text-indent:-999px;
+    display:block;
+    /* Setting display to block enables advanced styling for links */
+}

@@ -1,0 +1,69 @@
+body {
+	background: url('images/Bg-login.jpg') center top no-repeat !important;
+}
+#login {padding: 11% 0 0 0;}
+#login h1 a{
+    background: none !important;
+   	display: none !important;
+   	margin: 0 !important;	
+   	height: 0 !important;
+   	width: 0 !important;
+}  
+#loginform{
+	margin-top:50px;
+}
+.login #nav, .login #backtoblog {
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+    margin: 0px 0px 0px 16px;
+    padding: 16px 16px 0px;
+	text-align:center;
+}
+.login #nav a{
+	color:#161616 !important;
+	text-decoration: underline;
+	font-size: 20px;
+}
+.login #backtoblog a{
+	display:block;
+	width:325px;
+	height:62px;
+	text-indent:-10000px;
+	margin-left:-31px;
+    background: url('images/Btn.png') center top no-repeat !important;
+}
+.login #backtoblog a:hover{
+    background: url('images/Btn.png') center bottom no-repeat !important;
+}
+#contact {
+	text-align:center;
+	margin:0 auto;
+	margin-top:25px;
+	color:#161616;
+	font-size:11px;
+	max-width: 480px;
+}
+#contact .haut{
+	font-size:15px;
+}
+
+#contact .haut b{
+	font-size:15px;
+}
+#contact a{
+	color:#161616;
+}
+#contact  b{
+	font-size:12px;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1200px) {
+	#login {padding: 20% 0 0 0;}
+}
+
+@media screen and (min-width: 420px) and (max-width: 650px) {
+	#login {padding: 30% 0 0 0;}
+}
+
+@media screen and (min-width: 250px) and (max-width: 420px) {
+	#login {padding: 40% 0 0 0;}
+}

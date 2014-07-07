@@ -1,0 +1,52 @@
+.hide-shortcode-album {
+	display: none;
+}
+
+.show-img-shortcode-album {
+	background-color: #dddddd;
+	text-align: center;
+	margin-bottom: 20px;
+	position: relative;
+	padding: 30px;
+}
+
+
+.show-img-shortcode-album .album-action {
+	color: #FFFFFF;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 34px;
+	height: 34px;
+	text-decoration: none;
+	font-size: 30px;
+	line-height: 35px;
+	cursor: pointer;
+	display: none;
+}
+
+.show-img-shortcode-album .album-remove {
+	left: 46px;
+	font-size: 21px;
+}
+
+.show-img-shortcode-album:hover .album-action {
+	display: block;
+}
+
+
+.show-img-shortcode-album .album-edit {
+	background: url("images/action_edit.png");
+}
+
+.show-img-shortcode-album .album-remove {
+	background: url("images/action_remove.png");
+}
+
+/*.show-img-shortcode-album:hover .album-edit {
+	background: url("images/action_edit_hover.png");
+}
+
+.show-img-shortcode-album:hover .album-remove {
+	background: url("images/action_remove_hover.png");
+}*/

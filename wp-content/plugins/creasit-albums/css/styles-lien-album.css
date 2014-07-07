@@ -1,0 +1,7 @@
+.vignette-album { color: #777777 !important; text-decoration: none !important; }
+
+.vignette-album:hover { color: #FFFFFF !important; }
+
+.vignette-album > p { width: 155px; border: 1px solid #777777; border-top: none; padding: 5px; margin-top: -5px; background-color: #FFFFFF; transition: all 0.3s ease-in-out; }
+
+.vignette-album:hover > p { background-color: #777777; }

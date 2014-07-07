@@ -1,0 +1,22 @@
+.hide-shortcode-album { display: block; }
+.show-img-shortcode-album { display: none; }
+
+
+/* Page d'un album */
+.list-item-album { width: 100%; padding: 0 !important; margin: 0 !important; }
+.list-item-album li { background: none !important; padding: 0 !important; }
+
+
+/* Single album */
+.single-albums .entry-content ul { padding-left: 0px; margin-left: 0px; }
+.single-albums .entry-content ul li { list-style-image: none; display: block; float: left; margin: 0 0px 14px; }
+.single-albums .entry-content ul li a { display: block; }
+
+
+/* Archive albums */
+.liste-album .item-album { display:block; width: 300px; margin-bottom: 20px; background-color: #777777; color: #777777; text-decoration: none; font-weight: bold;}
+.liste-album .item-album img { margin-bottom: -4px; }
+.liste-album .item-album p { background-color: #FFFFFF; border: 1px solid #777777; border-top: none; text-align: center; padding: 5px; transition: all 0.3s ease-in-out; margin: 0;}
+
+.liste-album .item-album:hover { color: #FFFFFF;}
+.liste-album .item-album:hover p { background-color: #777777;}

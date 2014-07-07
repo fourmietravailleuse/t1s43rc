@@ -1,0 +1,27 @@
+#playthru-options fieldset {padding: 10px 0;}
+#playthru-options label {color:#236DB6; display: block; font-size: 120%; font-weight: bold;}
+#playthru-options input[type="checkbox"] {margin: 0 5px 0 0;}
+#playthru-options input[type="text"] {margin: 8px 0 0 0; padding: 8px; width: 300px;}
+
+.alert {border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-weight: bold; margin: 10px 0 10px 0; padding: 10px; width: 280px;}
+.alert.valid {background: #D6E5CF; border: 1px solid #679652; color: #517540;}
+
+.ayah-col-left {width: 65%; float: left;}
+.ayah-col-right {width: 30%; float: right;}
+.ayah-box {background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #E1E1E1;box-shadow: 0 0px 3px rgba(0, 0, 0, 0.1);margin: 10px 0 20px 0;}
+.ayah-box .inside {padding: 10px;}
+.ayah-box .footer {background: none repeat scroll 0 0 #F5F5F5;border-top: 1px solid #E1E1E1;overflow: hidden;padding: 10px;position: relative;}
+.ayah-box h2 {font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif; color: #236DB6; font-size: 22px; line-height: 29px; padding: 3px 15px 0px 0;margin: 0;font-weight: normal;}
+.ayah-box p {line-height: 18px;}
+
+.ayah-error {padding: 5px; border: 1px solid #1B5695; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; margin: 20px 0; min-height: 60px;background: #4b92ce; /* Old browsers */
+background: -moz-linear-gradient(top,  #4b92ce 0%, #236db6 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4b92ce), color-stop(100%,#236db6)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #4b92ce 0%,#236db6 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #4b92ce 0%,#236db6 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #4b92ce 0%,#236db6 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #4b92ce 0%,#236db6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b92ce', endColorstr='#236db6',GradientType=0 ); /* IE6-9 */
+}
+.ayah-error-text {padding: 10px 0 10px 70px;width: 67%; float: left; font-size: 18px; line-height: 22px; min-height: 50px; color: #fafafa; text-shadow: 0 1px 1px rgba(0,0,0,.3);background: url(../images/ayah-error-logo.png) no-repeat top left;}
+.ayah-error-button {background: url(../images/ayah-error-button.png) no-repeat top left; height: 13px; width: 103px; padding: 15px; display: block; float: right; margin: 10px 0 0 0; color: #D27628; font-size: 16px; font-weight: bold; text-align: center; text-decoration: none; text-shadow: 0 1px 1px rgba(255,255,255,.9);}

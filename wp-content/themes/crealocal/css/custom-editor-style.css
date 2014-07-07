@@ -1,0 +1,32 @@
+table { width: 100%; }
+table td { border: 1px solid #3b3b3b; padding: 5px; }
+a { color: #5c7d80; font-weight: bold; text-decoration: underline; }
+a:hover { text-decoration: none; }
+h2, .fond h2 { font-size: 30px; color: #3D5658; font-family: 'Yanone Kaffeesatz', 'sans-serif'; margin: 15px 0;	 border-bottom: 1px solid #3D5658; padding-bottom: 10px; }
+h3, .fond h3 { font-size: 24px; color: #5c7d80; font-family: 'Yanone Kaffeesatz', 'sans-serif'; margin: 10px 0;	 }
+h4, .fond h4 { font-size: 20px; color: #5c7d80; font-family: 'Yanone Kaffeesatz', 'sans-serif'; margin: 10px 0;	 }
+h5, .fond h5 { font-size: 16px; color: #5c7d80; margin: 10px 0;	 font-weight: bold; }
+h6, .fond h6 { font-size: 14px; color: #5c7d80; margin: 10px 0;	 font-weight: bold; }
+.fond h1, .fond h2, .fond h3, .fond h4 { color: #FFF; } 
+.fond { padding: 10px; color: #FFF; }
+.fond-noir { background-color: #3b3b3b; }
+.fond-vert { background-color: #5c7d80; }
+.fond-gris { background-color: #e8e8e8; color: #3b3b3b; }
+.border { padding: 10px; }
+.border-noir { border-left: 20px solid #3b3b3b; }
+.border-vert { border-left: 20px solid #5c7d80; }
+.border-gris { border-left: 20px solid #e8e8e8; }
+.puce { list-style-type: none; background-repeat: no-repeat; background-position: left center; padding-left: 20px; }
+.puce-verte { background-image: url('../images/puce-verte.png'); }
+.puce-noir { background-image: url('../images/(puce-noir.png'); }
+.puce-bleu { background-image: url('../images/puce-bleu.png'); }
+.puce-orange { background-image: url('../images/puce-orange.png'); }
+.alignleft { float: left; margin: 5px 15px 5px 0px; }
+.aligncenter { display: block; margin: 5px auto; }
+.alignright { float: right; margin: 5px 0px 5px 15px; }
+
+
+
+
+
+

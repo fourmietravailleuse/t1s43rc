@@ -1,0 +1,387 @@
+# LANGUAGE French translation for Noop plugin for WordPress.
+# by Grégory Viguier.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: noop 1.0.6\n"
+"Report-Msgid-Bugs-To: Grégory Viguier <i18n@screenfeed.fr>\n"
+"POT-Creation-Date: 2013-02-21 03:00+0100\n"
+"PO-Revision-Date: 2014-05-06 02:45+0100\n"
+"Last-Translator: Grégory Viguier <i18n@screenfeed.fr>\n"
+"Language-Team: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x\n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: noop.php
+#: --------------------------------------------------------------------
+msgid  "Noop is a framework to use within other plugins or themes, it does nothing by itself. It's aim is to provide a secure and robust foundation, and also powerful tools, to build great settings pages and manage options."
+msgstr "Noop est un framework à utiliser dans d'autres extensions ou thèmes, il ne fait rien par lui-même. Son but est de fournir une base sécurisée et robuste, et également de puissants outils pour construire des pages de paramètres et gérer des options."
+
+#: libs/class-noop-fields.php
+#: --------------------------------------------------------
+msgid  "millisecond"
+msgid_plural "milliseconds"
+msgstr[0] "milliseconde"
+msgstr[1] "millisecondes"
+
+msgid  "second"
+msgid_plural "seconds"
+msgstr[0] "seconde"
+msgstr[1] "secondes"
+
+msgid  "Fill"
+msgstr "Remplir"
+
+msgid  "(default: %s)"
+msgstr "(défaut&#160;: %s)"
+
+msgid  "This option is translatable"
+msgstr "Cette option est traduisible"
+
+#: libs/class-noop-options.php
+#: --------------------------------------------------------
+msgid  "Your settings have been reset."
+msgstr "Vos réglages ont été réinitialisés."
+
+msgid  "These are your settings saved at the date of %s."
+msgstr "Voici les réglages enregistrés à la date du %s."
+
+msgid  "It seems that date does not exist in your timeline."
+msgstr "Il semblerait que cette date n'existe pas dans votre chronologie de réglages."
+
+msgid  "Your settings have been restored from %s."
+msgstr "Vos réglages ont été restaurés à partir de la date du %s."
+
+msgid  "Something went wrong, that date does not exist in your timeline."
+msgstr "Quelque chose s'est mal passé, cette date n'existe pas dans votre chronologie de réglages."
+
+msgid  "No files sent."
+msgstr "Aucun fichier envoyé."
+
+msgid  "Server maximum upload size exceeded."
+msgstr "Taille maximale d&rsquo;envoi du serveur dépassée."
+
+msgid  "Form maximum upload size exceeded."
+msgstr "Taille maximale d&rsquo;envoi du formulaire dépassée."
+
+msgid  "Upload interrupted."
+msgstr "Envoi interrompu."
+
+msgid  "Empty file."
+msgstr "Fichier vide."
+
+msgid  "That is not a <samp>.json</samp> file."
+msgstr "Ceci n&rsquo;est pas un fichier <samp>.json</samp>."
+
+msgid  "Sorry, but this file is not meant for this plugin."
+msgstr "Désolé, mais ce fichier n&rsquo;est pas destiné à cette extension."
+
+msgid  "Sorry, but this file is not meant for this theme."
+msgstr "Désolé, mais ce fichier n&rsquo;est pas destiné à ce thème."
+
+msgid  "Settings imported."
+msgstr "Réglages importés."
+
+msgid  "Something went wrong, it seems those settings do not exist."
+msgstr "Quelque chose s'est mal passé, il semblerait que ces réglages n&rsquo;existent pas."
+
+
+#: libs/class-noop-settings.php
+#: --------------------------------------------------------
+msgid  "It seems there's nothing to see here..."
+msgstr "On dirait qu'il n'y a rien à voir ici..."
+
+msgid  "Debug: %s"
+msgstr "Debug: %s"
+
+msgid  "Settings for all languages"
+msgstr "Réglages pour toutes les langues"
+
+msgid  "Default values"
+msgstr "Valeurs par défaut"
+
+msgid  "Initial values"
+msgstr "Valeurs initiales"
+
+msgid  "Locale"
+msgstr "Langue"
+
+msgid  "Default locale"
+msgstr "Langue par défaut"
+
+msgid  "Languages"
+msgstr "Langues"
+
+msgid  "Are you sure you want to reset your settings to default?"
+msgstr "Êtes-vous sûr de vouloir réinitialiser vos réglages&#160;?"
+
+msgid  "Reset"
+msgstr "Réinitialiser"
+
+msgid  "Are you sure you want to reset your settings to default? (this will affect all languages)"
+msgstr "Êtes-vous sûr de vouloir réinitialiser vos réglages&#160;? (cela affectera toutes les langues)"
+
+msgid  "Available languages:"
+msgstr "Langues disponibles&#160;:"
+
+msgctxt "current language"
+msgid  "Current:"
+msgstr "Actuelle&#160;:"
+
+msgid  "German"
+msgstr "Allemand"
+
+msgid  "English (CA)"
+msgstr "Anglais (CA)"
+
+msgid  "English (GB)"
+msgstr "Anglais (GB)"
+
+msgid  "English (US)"
+msgstr "Anglais (US)"
+
+msgid  "Spanish"
+msgstr "Espagnol"
+
+msgid  "Belgian"
+msgstr "Belge"
+
+msgid  "French"
+msgstr "Français"
+
+msgid  "Italian"
+msgstr "Italien"
+
+msgid  "Default language"
+msgstr "Langue par défaut"
+
+msgid  "Languages to use"
+msgstr "Langues à utiliser"
+
+msgid  "If you don't run a multilingual site, check only your language in both sections."
+msgstr "Si votre site n'est pas multilingue, cochez seulement votre langue dans les deux sections."
+
+msgid  "This feature is disabled."
+msgstr "Cette fonctionnalité est désactivée."
+
+msgid  "This panel lists your settings history, up to 10 backups."
+msgstr "Ce panneau liste votre historique de réglages, jusqu'à 10 sauvegardes."
+
+msgid  "There's nothing to show yet."
+msgstr "Il n'y a encore rien à montrer."
+
+msgid  "The settings currently displayed (unless you have reset them)."
+msgstr "Les réglages actuellement affichés (à moins que vous les ayiez réinitialisés)."
+
+msgid  "See what %s was like."
+msgstr "Voir à quoi %s ressemblait."
+
+msgid  "This will affect only the settings for the current language."
+msgstr "Cela va affecter seulement vos réglages pour la langue courante."
+
+msgid  "Click one of the buttons above to see the settings at that date. Then, you will be able to restore these settings by clicking the &#171;Restore&#187; button. The settings at that date will be removed from the timeline and a new point will be created at the current date. %s"
+msgstr "Cliquez sur l'un des boutons ci-dessus pour voir les réglages à cette date. Ensuite, vous aurez la possibilité de restaurer ces réglages en cliquant sur le bouton &#171;&#160;Rétablir&#160;&#187;. Les réglages à cette date vont être supprimés de la chronologie de vos réglages et un nouveau point de sauvegarde sera créé à la date courante. %s"
+
+msgid  "This panel lets you import settings previously saved."
+msgstr "Ce panneau vous permet d&rsquo;importer des réglages précédemment sauvegardés."
+
+msgid  "Send file"
+msgstr "Envoyer le fichier"
+
+msgid  "This panel lets you export your current settings to a file."
+msgstr "Ce panneau vous permet d&rsquo;exporter vos réglages actuels vers un fichier."
+
+msgid  "Download file"
+msgstr "Télécharger le fichier"
+
+msgid  "... but it seems there's nothing to export here."
+msgstr "... mais il semblerait qu&rsquo;il n&rsquo;y ait rien à exporter ici."
+
+msgid  "Get some help"
+msgstr "Trouver de l'aide"
+
+msgid  "coffee"
+msgstr "le café"
+
+msgid  "beer"
+msgstr "la bière"
+
+msgid  "(by the way, I like %s)"
+msgstr "(au fait, j'aime %s)"
+
+msgid  "Settings History"
+msgstr "Historique des réglages"
+
+msgid  "Import / Export"
+msgstr "Import / Export"
+
+msgid  "the precious help and advises"
+msgstr "son aide précieuse et ses conseils"
+
+msgid  "Thanks a lot to this awsome person/team:"
+msgid_plural "Thanks a lot to these awsome persons/teams:"
+msgstr[0] "Merci beaucoup à cette personne/équipe fantastique&#160;:"
+msgstr[1] "Merci beaucoup à ces personnes/équipes fantastiques&#160;:"
+
+msgid  "%1$s for %2$s"
+msgstr "%1$s pour %2$s"
+
+#: advanced-fields/noop_map_field.php --------------------------------------------------------
+msgid  "Marker:"
+msgstr "Marqueur&#160;:"
+
+msgid  "Center:"
+msgstr "Centre&#160;:"
+
+msgid  "Zoom:"
+msgstr "Zoom&#160;:"
+
+msgid  "Get coordinates"
+msgstr "Obtenir les coordonnées"
+
+msgid  "Refresh the map"
+msgstr "Actualiser la carte"
+
+msgid  "Once you have filled the address fields, the map will NEED the latitude and longitude.<br/>Provide them by clicking the &#171;&#160;Get coordinates&#160;&#187; button.<br/>Each time you change the address, you must click it again."
+msgstr "Une fois les champs d'adresse remplis, la carte a BESOIN d'une latitude et d'une longitude.<br/>Fournissez les en cliquant sur le bouton &#171;&#160;Obtenir les coordonnées&#160;&#187;.<br/>Chaque fois que vous changez l'adresse, vous devez cliquer dessus une nouvelle fois."
+
+msgid  "Latitude:"
+msgstr "Latitude&#160;:"
+
+msgid  "Longitude:"
+msgstr "Longitude&#160;:"
+
+msgid  "(e.g. %s)"
+msgstr "(ex&#160;: %s)"
+
+msgid  "To retrieve coordinates from the address, javascript must be activated in your browser preferences. However, you can set the latitude and longitude manually."
+msgstr "Pour récupérer les coordonnées à partir de l'adresse, javascript doit être activé dans les préférences de votre navigateur. Toutefois, vous pouvez définir la latitude et la longitude manuellement."
+
+msgid  "If the map fails to retrieve coordinates or if they are not accurate enough, you can set the latitude and longitude manually."
+msgstr "Si la carte échoue à récupérer les coordonnées ou si elles ne sont pas suffisamment précises, vous pouvez définir la latitude et la longitude manuellement."
+
+msgid  "You can also specify a different point to center the map (facultative)."
+msgstr "Vous pouvez aussi spécifier un point différent pour le centre de la carte (facultatif)."
+
+msgid  "Initial zoom:"
+msgstr "Zoom initial&#160;:"
+
+msgid  "from %1$d (faaaaar away) to %2$d (very close)."
+msgstr "de %1$d (trèèèèès éloigné) à %2$d (très proche)."
+
+msgid  "Sorry, can&#8217;t retrieve coordinates. Try another address or fill the following fields."
+msgstr "Désolé, les coordonnées n&#8217;ont pu être récupérées. Essayez une autre adresse ou remplissez les champs suivants."
+
+msgid  "Error: geocoding can&#8217;t be launched."
+msgstr "Erreur&#160;: le géocodage ne peut être lancé."
+
+#: advanced-fields/noop_date_field.php
+#: --------------------------------------------------------
+msgid  "F d, Y @ H : i"
+msgstr "d F Y @ H : i"
+
+#: advanced-fields/noop_month_year_field.php
+#: --------------------------------------------------------
+msgid  "F, Y"
+msgstr "F Y"
+
+msgid  "%1$s, %2$s"
+msgstr "%1$s %2$s"
+
+#: advanced-fields/noop_hour_minute_field.php
+#: --------------------------------------------------------
+msgid  "%1$s h %2$s min"
+msgstr "%1$s h %2$s min"
+
+#: advanced-fields/noop_select_post_field.php
+#: --------------------------------------------------------
+msgid  "There's no such thing here!"
+msgstr "Il n'y a rien de tout cela ici&#160;!"
+
+#: advanced-fields/noop_upload_field.php
+#: --------------------------------------------------------
+msgid  "Add an Image"
+msgstr "Ajouter une image"
+
+msgid  "One value per line"
+msgstr "Une valeur par ligne"
+
+#: inc/admin-ajax.inc.php --------------------------------------------------------
+msgid  "Inherited"
+msgstr "Hérité"
+
+#: inc/updater.php --------------------------------------------------------
+msgid  "An unexpected error occurred. Something may be wrong with screenfeed.fr or this server&#8217;s configuration. If you continue to have problems, please leave a message on <a href=\"%s\">my blog</a>."
+msgstr "Une erreur inattendue est survenue. Il pourrait y avoir un problème avec screenfeed.fr ou la configuration de ce serveur. Si ce problème persiste, exposez-le en laissant un message sur <a href=\"%s\">mon blog</a>."
+
+#: Commonly used for the map/contact fields
+#: --------------------------------------------------------
+msgid  "Contact"
+msgstr "Contact"
+
+msgid  "Contact Page"
+msgstr "Page de contact"
+
+msgid  "Contact Form"
+msgstr "Formulaire de contact"
+
+msgid  "Find it %s"
+msgstr "Trouvez-le %s"
+
+msgid  "here"
+msgstr "ici"
+
+msgid  "Phone"
+msgstr "Téléphone"
+
+msgid  "Cell Phone"
+msgstr "Téléphone portable"
+
+msgid  "Fax"
+msgstr "Fax"
+
+msgid  "State or Region"
+msgstr "Département ou région"
+
+msgid  "Zip code"
+msgstr "Code postal"
+
+msgid  "City"
+msgstr "Ville"
+
+msgid  "Country"
+msgstr "Pays"
+
+msgid  "State"
+msgstr "État"
+
+msgid  "Map"
+msgstr "Carte"
+
+msgid  "Don't use for the geolocalization"
+msgstr "Ne pas utiliser pour la géolocalisation"
+
+msgid  "Don't display on the site"
+msgstr "Ne pas afficher sur le site"
+
+msgid  "Display satnav coordinates"
+msgstr "Afficher les coordonnées GPS"
+
+msgid  "(e.g. %1$s) %2$s"
+msgstr "(ex&#160;: %1$s) %2$s"
+
+#: Other --------------------------------------------------------
+msgid  "End Date"
+msgstr "Date de fin"
+
+msgid  "Date"
+msgstr "Date"
+
+msgid  "%s:"
+msgstr "%s&#160;:"
