@@ -31,15 +31,7 @@ jQuery(function($) {
 
 	// -------------------------------------------------------------------------------------------------------------------------------
 
-	// Modifier le titre des statistiques de Piwik
 
-	if(jQuery('body').hasClass('dashboard_page_wp-piwik_stats')){
-
-		jQuery('#wp-piwik-stats-general h2').html('Statistiques <span style="font-size:14px;">(<a href="http://'+window.location.hostname+'/piwik/" target="_blank">Accédez directement à Piwik</a>)</span>');
-
-	}
-
-	// -------------------------------------------------------------------------------------------------------------------------------
 
 });
 

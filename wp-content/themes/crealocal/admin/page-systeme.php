@@ -94,6 +94,51 @@ add_action( 'pre_get_posts', 'custom_parse_request_tricksy' );
 
 
 /**
+Création du custom field "Introduction"
+*/
+
+if(function_exists("register_field_group"))
+{
+    register_field_group(array (
+        'id' => 'acf_intro',
+        'title' => 'intro',
+        'fields' => array (
+            array (
+                'key' => 'field_53a412a047113',
+                'label' => '',
+                'name' => 'acf_introduction',
+                'type' => 'textarea',
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'br',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'page-systeme',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'acf_after_title',
+            'layout' => 'default',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+}
+
+
+
+/**
 Ajout du custom post type dans le plugin "Custom post template"
 */
 

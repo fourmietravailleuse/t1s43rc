@@ -54,13 +54,6 @@ Affichage Liste ou contextualités
 require_once('admin/affichage-liste-contextualites.php');
 
 
-
-/**
-Fil d'ariane
-*/
-require_once('admin/breadcrumbs.php');
-
-
 /**
 Force l'installation des plugins requis pour le thème, cf. http://tgmpluginactivation.com/
 */
@@ -408,55 +401,32 @@ add_action('admin_head', 'creasit_modifier_style_medias_categorie');
 Modifier l'adresse email pour les mot de passe perdu
 */
 
-add_filter('wp_mail_from', 'new_mail_from');
-add_filter('wp_mail_from_name', 'new_mail_from_name');
+// add_filter('wp_mail_from', 'new_mail_from');
+// add_filter('wp_mail_from_name', 'new_mail_from_name');
  
-function new_mail_from() { return 'creasit@'.$_SERVER['HTTP_HOST']; }
-function new_mail_from_name() { $namesite = get_bloginfo('name'); return '['.$namesite.']'; }
+// function new_mail_from() { return 'no-reply@creasit.com'; }
+// function new_mail_from_name() { $namesite = get_bloginfo('name'); return '['.$namesite.']'; }
 
 
 /**
-Modification du texte dans le mail de changement de mot de passe
+Modifier l'adresse email pour les mot de passe perdu
 */
 
-function wpse_custom_retrieve_password_message( $message, $key ) {
+// function wp_password_change_notification( $user )
+// {
+//     $message = sprintf('Password Lost and Changed for user: %s', $user->user_login) . "\r\n";
+//     // The blogname option is escaped with esc_html on the way into the database in sanitize_option
+//     // we want to reverse this for the plain text arena of emails.
+//     $blogname = wp_specialchars_decode(get_option('blogname'), ENT_QUOTES);
+//     wp_mail(get_option('admin_email'), sprintf('[%s] Password Lost/Changed', $blogname), $message);
+// }
 
-    global $wpdb, $wp_hasher;
 
-    if ( empty( $_POST['user_login'] ) ) {
-      $errors->add('empty_username', __('<strong>ERROR</strong>: Enter a username or e-mail address.'));
-    } else if ( strpos( $_POST['user_login'], '@' ) ) {
-      $user_data = get_user_by( 'email', trim( $_POST['user_login'] ) );
-      if ( empty( $user_data ) )
-        $errors->add('invalid_email', __('<strong>ERROR</strong>: There is no user registered with that email address.'));
-    } else {
-      $login = trim($_POST['user_login']);
-      $user_data = get_user_by('login', $login);
-    }
 
-    $user_login = $user_data->user_login;
-    $user_email = $user_data->user_email;
 
-    if ( empty( $wp_hasher ) ) {
-      require_once ABSPATH . 'wp-includes/class-phpass.php';
-      $wp_hasher = new PasswordHash( 8, true );
-    }
 
-    $hashed = $wp_hasher->HashPassword( $key );
-    $wpdb->update( $wpdb->users, array( 'user_activation_key' => $hashed ), array( 'user_login' => $user_login ) );
 
-    $message = 'Bonjour, vous avez demandé un renouvellement de mot de passe via le site :' . "\r\n\r\n";
-    $message .= network_home_url( '/' ) . "\r\n\r\n";
-    $message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
-    $message .= __('If this was a mistake, just ignore this email and nothing will happen.') . "\r\n\r\n";
-    $message .= __('To reset your password, visit the following address:') . "\r\n\r\n";
-    $message .= '<' . network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login), 'login') . ">\r\n\r\n";
-    $message .= __('Cordialement,')."\r\n\r\n";
-    $message .= _('L\'équipe Créasit');
 
-    return $message;
-}
-add_filter( 'retrieve_password_message', 'wpse_custom_retrieve_password_message', 10, 2 );
 
 
 

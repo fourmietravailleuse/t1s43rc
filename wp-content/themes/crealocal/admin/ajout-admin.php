@@ -360,17 +360,7 @@ function creasit_suppression_element_modification_rapide(){
           table.wp-list-table fieldset.inline-edit-col-right .inline-edit-group label.inline-edit-status {display:block;}
           #wpbody-content .inline-edit-row-post .inline-edit-col-center {width:60%;}
           table.wp-list-table label.inline-edit-author {display:none;}
-          form#posts-filter .inline-edit-col .inline-edit-group .alignright {display:none;}
         </style>';
 }
 
 add_action( 'quick_edit_custom_box', 'creasit_suppression_element_modification_rapide', 10, 2 );
-
-
-/**
-Masquer les mises à jour pour les webmestres
-*/
-
-if (!current_user_can('update_plugins')) {
-  add_action('admin_init', create_function(false,"remove_action('admin_notices', 'update_nag', 3);"));
-}

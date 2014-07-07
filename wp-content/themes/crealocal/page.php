@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 <?php if ((get_field('contextualites_ou_affichage_liste_page') == 'affichage-liste' && get_field('en_savoir_plus_page')) || get_field('contextualites_ou_affichage_liste_page') == 'contextualites'){
-		echo '<div id="main-content" class="main-content affichage-savoir-plus fleft">';
-	} else {
-		echo '<div id="main-content" class="main-content">';
-	}
+	echo '<div id="main-content" class="main-content fleft affichage-savoir-plus">';
+} else {
+	echo '<div id="main-content" class="main-content">';
+}
 ?>
 
 	<div id="content" class="site-content" role="main">
@@ -32,10 +32,9 @@
 					<?php if(get_the_content()){
 						the_content();
 					} else {
-						
+						echo __('N\'hésiter pas à allez voir ces autres pages :');
 						$children = get_pages('child_of='.$post->ID);
 						if( count( $children ) != 0 ){
-							echo __('N\'hésiter pas à allez voir ces autres pages :');
 							echo '<ul class="show-page-child">';
 								wp_list_pages('title_li=&sort_column=menu_order&child_of='.$post->ID);
 							echo '</ul>';
@@ -54,29 +53,20 @@
 </div>
 
 <?php 
+$get_content = get_the_content();
+if(!empty($get_content)) {
 
-$content = get_the_content();
-if(!trim($content) == "") {
-
-	if (get_field('contextualites_ou_affichage_liste_page') == 'contextualites'){
-
+	if (get_field('contextualites_ou_affichage_liste_page') == 'contextualites') {
 		get_sidebar();
-
-	} else if (get_field('contextualites_ou_affichage_liste_page') == 'affichage-liste'){
-
+	} 
+	else if (get_field('contextualites_ou_affichage_liste_page') == 'affichage-liste') {
 		if(get_field('en_savoir_plus_page')){
-
 			get_sidebar('affichage');
-
 		}
-
 		get_template_part( 'affichage-liste' );
-
 	}
 }
 
 ?>
-
-
 
 <?php get_footer(); ?>

@@ -34,6 +34,7 @@ function creasit_after_setup_theme() {
 	// Styles d'images
 	add_image_size('little_preview', 55, 55, true);
 	add_image_size('slider_home', 962, 372, true);
+	add_image_size('carousel', 960, 960, true);
 	
   
 
@@ -102,13 +103,3 @@ function creasit_suppression_tag_menu() {
 }
 add_action('admin_head', 'creasit_suppression_tag_menu');
 
-/**
-Inclusion du code de suivi de Piwik
-*/
-
-add_action('wp_enqueue_scripts', 'creasit_code_suivi_piwik');
-function creasit_code_suivi_piwik() {
-	// Styles CSS
-	global $wp_styles, $wp_scripts;
-	wp_enqueue_script('Piwik-code', get_template_directory_uri().'/js/code.piwik.js', array('jquery'), '1.0', true);
-}

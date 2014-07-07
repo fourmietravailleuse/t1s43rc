@@ -7,8 +7,7 @@ q, blockquote { quotes: none;}
 q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
 a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
-.fleft {float:left;}
-.fright {float:right;}
+
 
 body { font-family: Arial sans-serif, Helvetica; font-size: 13px; line-height: 18px; }
 p { margin-bottom: 5px; }
@@ -63,6 +62,8 @@ h4, .entry-content .fond h4 { font-size: 18px; color: #5c7d80; font-family: 'Yan
 .center { margin: 0 auto; width: 960px; }
 .content { font-size: 14px; }
 .clearfix { float: none; clear: both; }
+.fleft {float:left;}
+.fright {float:right;}
 a.link-external {background:url(../images/lien_externe_gris.png) no-repeat left top 4px;padding-left:15px;}
 
 
@@ -115,7 +116,7 @@ a.link-external {background:url(../images/lien_externe_gris.png) no-repeat left 
 
 
 /* Sidebar */
-#main-content { overflow: hidden;}
+#main-content { overflow: hidden; }
 #main-content.affichage-savoir-plus {width:610px;}
 #primary { width: 610px; float: left; margin-right: 30px; }
 #secondary { width: 280px; float: right; margin-top: 30px; padding: 0 10px; }
